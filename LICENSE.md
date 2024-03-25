@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2024 Carl Dawson
+Copyright (c) 2024 Down At The Bottom Of The Mole Hole
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
