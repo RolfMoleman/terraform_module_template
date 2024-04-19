@@ -1,10 +1,10 @@
 terraform {
-  required_version = "1.8.0"
+  required_version = "1.8.1"
   required_providers {
 
     aws = {
       source  = "hashicorp/aws"
-      version = "5.45.0"
+      version = "5.46.0"
     }
 
     azuread = {
@@ -18,7 +18,7 @@ terraform {
     }
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "3.99.0"
+      version = "3.100.0"
     }
 
     mongodbatlas = {
