@@ -6,20 +6,20 @@ module "azrm_naming" {
   suffix  = [var.application_shortname, var.environment_tag]
 }
 
-  module "azdo_naming" {
-         source  = "DownAtTheBottomOfTheMoleHole/naming/azuredevops"
-         version  = "2.1.15"
+module "azdo_naming" {
+  source  = "DownAtTheBottomOfTheMoleHole/naming/azuredevops"
+  version = "2.1.15"
 
-     # Optional variables
-         environment_tags  = [
-  "dev",
-  "uat",
-  "prd"
-]
-         prefix  = []
-         suffix  = [var.application_shortname]
-         unique_include_numbers  = true
-         unique_length  = 4
-         unique_seed  = ""
-         work_items  = []
-  }
+  # Optional variables
+  environment_tags = [
+    "dev",
+    "uat",
+    "prd"
+  ]
+  prefix                 = []
+  suffix                 = [var.application_shortname]
+  unique_include_numbers = true
+  unique_length          = 4
+  unique_seed            = ""
+  work_items             = []
+}
