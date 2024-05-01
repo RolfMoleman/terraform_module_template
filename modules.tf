@@ -8,7 +8,7 @@ module "azrm_naming" {
 
 module "azdo_naming" {
   source  = "DownAtTheBottomOfTheMoleHole/naming/azuredevops"
-  version = "2.1.17"
+  version = "2.1.18"
 
   # Optional variables
   environment_tags = [
