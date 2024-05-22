@@ -4,21 +4,21 @@ terraform {
 
     aws = {
       source  = "hashicorp/aws"
-      version = "5.48.0"
+      version = "5.50.0"
     }
 
     azuread = {
       source  = "hashicorp/azuread"
-      version = "2.48.0"
+      version = "2.50.0"
     }
 
     azuredevops = {
       source  = "microsoft/azuredevops"
-      version = "1.0.1"
+      version = "1.1.1"
     }
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "3.102.0"
+      version = "3.104.2"
     }
 
     mongodbatlas = {
@@ -28,7 +28,7 @@ terraform {
 
     random = {
       source  = "hashicorp/random"
-      version = "3.6.1"
+      version = "3.6.2"
     }
 
     time = {
