@@ -18,7 +18,7 @@ terraform {
     }
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "3.104.0"
+      version = "3.104.2"
     }
 
     mongodbatlas = {
@@ -28,7 +28,7 @@ terraform {
 
     random = {
       source  = "hashicorp/random"
-      version = "3.6.1"
+      version = "3.6.2"
     }
 
     time = {
