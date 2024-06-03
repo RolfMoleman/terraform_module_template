@@ -18,12 +18,12 @@ terraform {
     }
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "3.105.0"
+      version = "3.106.1"
     }
 
     mongodbatlas = {
       source  = "mongodb/mongodbatlas"
-      version = "1.16.1"
+      version = "1.16.2"
     }
 
     random = {
