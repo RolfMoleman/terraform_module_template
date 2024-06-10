@@ -4,7 +4,7 @@ terraform {
 
     aws = {
       source  = "hashicorp/aws"
-      version = "5.52.0"
+      version = "5.53.0"
     }
 
     azuread = {
@@ -18,7 +18,7 @@ terraform {
     }
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "3.106.1"
+      version = "3.107.0"
     }
 
     mongodbatlas = {
