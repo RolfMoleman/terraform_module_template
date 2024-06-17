@@ -4,7 +4,7 @@ terraform {
 
     aws = {
       source  = "hashicorp/aws"
-      version = "5.53.0"
+      version = "5.54.1"
     }
 
     azuread = {
@@ -18,12 +18,12 @@ terraform {
     }
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "3.107.0"
+      version = "3.108.0"
     }
 
     mongodbatlas = {
       source  = "mongodb/mongodbatlas"
-      version = "1.17.0"
+      version = "1.17.1"
     }
 
     random = {
