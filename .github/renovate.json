@@ -1,42 +1,50 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "addLabels": ["renovate", "bot", "dependencies"],
-    "commitBodyTable": true,
-    "extends": ["config:recommended"],
-    "gitAuthor": "Renovate <renovate@rolfmoleman.com>",
-    "packageRules": [
-      {
-        "matchDatasources": ["azure-pipelines-tasks"],
-        "enabled": false,
-        "extractVersion": "^(?<version>\\d+)",
-      },
-      {
-        "description": "Automatically merge patch versions",
-        "matchUpdateTypes": [
-          "patch"
-        ],
-        "automerge": true,
-        "automergeType": "pr"
-      },
-      {
-        "description": "Automatically merge minor versions",
-        "matchUpdateTypes": [
-          "minor"
-        ],
-        "automerge": true,
-        "automergeType": "pr"
-      },
-      {
-        "description": "Automatically merge major versions",
-        "matchUpdateTypes": [
-          "major"
-        ],
-        "automerge": true,
-        "automergeType": "pr"
-      },
-      {
-        "description": "Add package names to this array to exclude them from Renovate updates",
-        "excludePackageNames": []
-      }
-    ]
-  }
+  "addLabels": [
+    "renovate",
+    "bot",
+    "dependencies"
+  ],
+  "commitBodyTable": true,
+  "extends": [
+    "config:recommended"
+  ],
+  "gitAuthor": "Renovate <renovate@rolfmoleman.com>",
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "azure-pipelines-tasks"
+      ],
+      "enabled": false,
+      "extractVersion": "^(?<version>\\d+)"
+    },
+    {
+      "description": "Automatically merge patch versions",
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "automerge": true,
+      "automergeType": "pr"
+    },
+    {
+      "description": "Automatically merge minor versions",
+      "matchUpdateTypes": [
+        "minor"
+      ],
+      "automerge": true,
+      "automergeType": "pr"
+    },
+    {
+      "description": "Automatically merge major versions",
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "automerge": true,
+      "automergeType": "pr"
+    },
+    {
+      "description": "Add package names to this array to exclude them from Renovate updates",
+      "excludePackageNames": []
+    }
+  ]
+}
