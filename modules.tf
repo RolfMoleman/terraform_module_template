@@ -2,13 +2,13 @@
 #
 module "azrm_naming" {
   source  = "Azure/naming/azurerm"
-  version = "0.4.1"
+  version = "~> 0.4.0"
   suffix  = [var.application_shortname, var.environment_tag]
 }
 
 module "azdo_naming" {
   source  = "DownAtTheBottomOfTheMoleHole/naming/azuredevops"
-  version = "2.1.32"
+  version = "~> 2.1.0"
 
   # Optional variables
   environment_tags = [
