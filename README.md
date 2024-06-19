@@ -67,8 +67,8 @@ these are the pre-commit hooks used for this repo:
   - [About The Project](#about-the-project)
   - [Built With](#built-with)
 - [Terraform](#terraform)
-    - [Requirements](#requirements)
-    - [Consuming Module\_Name](#consuming-module_name)
+  - [Requirements](#requirements)
+  - [Consuming Module\_Name](#consuming-module_name)
   - [Example 1](#example-1)
     - [Resources](#resources)
     - [Inputs](#inputs)
@@ -98,7 +98,7 @@ these are the pre-commit hooks used for this repo:
 
 ## About The Project
 
-This is a repository template to be used for all of 
+This is a repository template to be used for all of
 Down At The Bottom Of The Mole Hole's Terraform modules.
 
 ---
