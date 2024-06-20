@@ -2,7 +2,7 @@
 #
 module "azrm_naming" {
   source  = "Azure/naming/azurerm"
-  version = "~> 0.4.0"
+  version = "0.4.1"
   suffix  = [var.application_shortname, var.environment_tag]
 }
 
