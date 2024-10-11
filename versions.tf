@@ -19,7 +19,7 @@ terraform {
     }
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~> 4.2.0"
+      version = "~> 4.5.0"
     }
 
     mongodbatlas = {
