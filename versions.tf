@@ -4,7 +4,7 @@ terraform {
 
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.67.0"
+      version = "~> 5.73.0"
     }
 
     azuread = {
