@@ -24,7 +24,7 @@ terraform {
 
     mongodbatlas = {
       source  = "mongodb/mongodbatlas"
-      version = "~> 1.22.0"
+      version = "~> 1.25.0"
     }
 
     random = {
