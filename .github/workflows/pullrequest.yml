@@ -78,7 +78,7 @@ jobs:
       # Git Checkout
       - name: Checkout Code
         if: success() || failure()
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
           fetch-depth: 0 # If you use VALIDATE_ALL_CODEBASE = true, you can remove this line to improve performances
@@ -204,7 +204,7 @@ jobs:
     if: "!cancelled()"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       ##############################################################
       #######                TERRAFORM                       #######
@@ -251,7 +251,7 @@ jobs:
     if: ${{ always() && (needs.tfupdate.result == 'success' || needs.tfupdate.result == 'failure') && github.event_name != 'cancel' }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: ${{ github.event.pull_request.head.ref }}
 
@@ -322,7 +322,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Merge Dependabot PR
         run: |
@@ -360,7 +360,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Merge Renovate PR
         run: |
