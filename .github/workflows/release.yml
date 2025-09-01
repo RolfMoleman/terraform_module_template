@@ -58,7 +58,7 @@ jobs:
     name: "terraform-docs"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: ${{ github.event.pull_request.head.ref }}
 
@@ -125,7 +125,7 @@ jobs:
       # Git Checkout
       - name: Checkout Code
         if: "!cancelled()"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
           fetch-depth: 0 # If you use VALIDATE_ALL_CODEBASE = true, you can remove this line to improve performances
@@ -251,7 +251,7 @@ jobs:
     steps:
       - name: Checkout
         if: "!cancelled()"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
