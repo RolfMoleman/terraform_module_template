@@ -48,7 +48,7 @@ jobs:
   tfupdate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       ##############################################################
       #######             PRIVATE MODULES                    #######
@@ -90,7 +90,7 @@ jobs:
     needs: tfupdate
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           ref: ${{ github.event.pull_request.head.ref }}
 
@@ -151,7 +151,7 @@ jobs:
       # Git Checkout
       - name: Checkout Code
         if: success() || failure()
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
           #fetch-depth: 0 # If you use VALIDATE_ALL_CODEBASE = true, you can remove this line to improve performances
